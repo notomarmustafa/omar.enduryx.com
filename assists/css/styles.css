@@ -333,10 +333,39 @@ span {
   padding-left: 2rem;
 }
 
+.education-box .education-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
 .education-content .content {
   position: relative;
   padding: 1.5rem;
   border: .2rem solid var(--main-color);
   border-radius: .6rem;
   margin-bottom: 2rem;
+}
+
+.education-content .content .year {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  padding-bottom: .5rem;
+}
+
+.education-content .content .year i {
+  padding-right: .5rem;
+}
+
+.education-content .content h3 {
+  font-size: 2rem;
+}
+
+.education-content .content p {
+  font-size: 1.6rem;
+  padding-top: .5rem;
 }
