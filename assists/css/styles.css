@@ -568,3 +568,16 @@ span {
 .contact form .btn-box.btns .btn {
   cursor: pointer;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--second-bg-color);
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+}
