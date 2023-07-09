@@ -741,3 +741,9 @@ span {
     height: 38px;
   }
 }
+
+@media (max-width: 462px) {
+  .home-content h1 {
+    font-size: 5.2rem;
+  }
+}
