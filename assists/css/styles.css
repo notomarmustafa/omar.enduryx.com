@@ -754,4 +754,8 @@ span {
   .contact form .input-box .input-field {
     width: 100%;
   }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
 }
