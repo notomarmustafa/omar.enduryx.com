@@ -440,6 +440,12 @@ span {
   background: var(--second-bg-color);
 }
 
+.skills h2 {
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .skills .skills-row {
   display: flex;
   flex-wrap: wrap;
