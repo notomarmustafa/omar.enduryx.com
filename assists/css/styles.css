@@ -42,8 +42,8 @@ body {
   transition: .3s;
 }
 
-.header .sticky {
-  background: yellowgreen;
+.header.sticky {
+  background: var(--bg-color);
 }
 
 .logo {
