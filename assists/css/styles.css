@@ -81,8 +81,7 @@ section {
   align-items: center;
   padding: 0 9%;
   background: url('/assists/img/home.png') no-repeat;
-  margin-right: -700px;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
 }
 
