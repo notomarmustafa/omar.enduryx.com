@@ -725,6 +725,11 @@ span {
   animation: none;
 }
 
+section:nth-child(odd) .animate.scroll,
+.footer .animate.scroll {
+  background: var(--second-bg-color);
+}
+
 .education .education-box .animate.scroll {
   width: 105%;
 }
