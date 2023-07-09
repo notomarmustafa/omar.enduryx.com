@@ -322,10 +322,13 @@ span {
 }
 
 .about-content h3 {
+  position: relative;
+  display: inline-block;
   font-size: 2.6rem;
 }
 
 .about-content p {
+  position: relative;
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
@@ -686,6 +689,7 @@ span {
 .animate.scroll {
   transition: 1s ease;
   transition-delay: calc(.3s / var(--i));
+  animation: none;
 }
 
 .about.show-animate .animate.scroll {
