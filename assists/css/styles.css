@@ -892,6 +892,7 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 371px) {
+
   .home {
     justify-content: center;
   }
@@ -907,7 +908,6 @@ section:nth-child(odd) .animate.scroll,
     font-size: 5rem;
   }
 }
-
 
 
 /*  KEYFRAMES ANIMATION */
