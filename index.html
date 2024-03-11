@@ -290,6 +290,7 @@
 
     <script src="assists/js/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         function sendEmail(){
           Email.send({
@@ -303,9 +304,18 @@
               + "<br> Subject: " + document.getElementById("subject").value
               + "<br> Message: " + document.getElementById("message").value
           }).then(
-          message => alert("Message Sent Succesfully!")
-          );
-        }
+          message => {
+              if (message == "OK") {
+                Swal.fire({
+                    title: "Success!",
+                    text: "Message sent successfully!",
+                    icon: "success"
+                  });
+              }
+          }
+      );
+
+    }
     </script>
 </body>
 
