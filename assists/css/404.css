@@ -21,6 +21,8 @@
 body{
     background-color: var(--bg-color);
     height: 100vh;
+    background-image: url(/assists/img/bg.jpg);
+    animation: animate 20s ease-in-out infinite;
 }
 .error-page{
     position: absolute;
