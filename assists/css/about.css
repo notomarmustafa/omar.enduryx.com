@@ -13,9 +13,9 @@
 
 ::-webkit-scrollbar { width: 13px; }
 
-::-webkit-scrollbar-track { background-color:#081b29; }
+::-webkit-scrollbar-track { background-color: var(--second-bg-color); }
 
-::-webkit-scrollbar-thumb { background-color: var(--second-bg-color); }
+::-webkit-scrollbar-thumb { background-color: #081b29; }
 
 :root {
   --bg-color: #081b29;
