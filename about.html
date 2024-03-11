@@ -61,14 +61,14 @@
    <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1; background-color: #081b29";></span></h2>
 
-    <form action="#">
+    <form onsubmit="sendEmail(); reset(); return false;">
       <div class="input-box">
         <div class="input-field">
-          <input type="text" name="Name" placeholder="Full Name" required>
+          <input type="text" id="name" placeholder="Full Name" required>
           <span class="focus"></span>
         </div>
         <div class="input-field">
-          <input type="text"  name="Email" placeholder="Email Address" required>
+          <input type="text"  id="email" placeholder="Email Address" required>
           <span class="focus"></span>
         </div>
 
@@ -77,11 +77,11 @@
 
       <div class="input-box">
         <div class="input-field">
-          <input type="number" name="Number" placeholder="Mobile Number" required>
+          <input type="number" id="phone" placeholder="Mobile Number" required>
           <span class="focus"></span>
         </div>
         <div class="input-field">
-          <input type="text" name="Subject" placeholder="Subject" required>
+          <input type="text" id="subject" placeholder="Subject" required>
           <span class="focus"></span>
         </div>
 
@@ -89,7 +89,7 @@
       </div>
 
       <div class="textarea-field">
-        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <textarea name="Message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <span class="focus"></span>
 
         <span class="animate scroll" style="--i:4; background-color: #081b29;"></span>
@@ -120,6 +120,26 @@
 
 
   <script src="assists/js/script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+          Email.send({
+              Host : "smtp.elasticemail.com",
+              Username : "omarmustafa2024@gmail.com",
+              Password : "B79AE26573B104693F8452C7943441C66D56",
+              To : 'omarmustafa2024@gmail.com',
+              From : document.getElementById("email").value,
+              Subject : "New Contact Form - Portfolio",
+              Body : "Name: " + document.getElementById("name").value
+              + "<br> Email: " + document.getElementById("email").value
+              + "<br> Mobile Number: " + document.getElementById("phone").value
+              + "<br> Subject: " + document.getElementById("subject").value
+              + "<br> Message: " + document.getElementById("message").value
+          }).then(
+          message => alert("Message Sent Succesfully!")
+          );
+        }
+    </script>
 </body>
 
 </html>
