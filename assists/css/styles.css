@@ -864,8 +864,13 @@ section:nth-child(odd) .animate.scroll,
     flex-direction: column;
   }
 
+  .home {
+    min-height: 130vh;
+  }
+
   .home-sci {
     width: 160px;
+    content-visibility: hidden;
   }
 
   .home-sci a {
