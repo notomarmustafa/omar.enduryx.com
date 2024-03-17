@@ -229,7 +229,7 @@
    <!--  contact section design -->
    <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
-      <form action="contact.js" method="post">
+      <form onclick="SendMail()">
         <div class="input-box">
           <div class="input-field">
             <input type="text" id="name" name="name" placeholder="Full Name" required>
@@ -287,9 +287,14 @@
    </footer>
   
 
-    <script src="assists/js/script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assists/js/script.js" type="text/JavaScript"></script>
+
+    <script type="text/JavaScript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script tabindex="text/JavaScript">
+      (function() {
+        emailjs.init("user_NYBcM9xEaOt0IIEoWfCtC");
+      })();
+    </script>
 </body>
 
 </html>
