@@ -275,7 +275,7 @@
    <!--  footer design -->
    <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Omar Mustafa | All Rights Reserved.</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> by Omar Mustafa | All Rights Reserved.</p>
 
         <span class="animate scroll" style="--i:6;"></span>
       </div>
@@ -295,8 +295,8 @@
         function sendEmail(){
           Email.send({
               SecureToken: "478d2bb7-ea40-4371-929d-11550781d890",
-              To : 'omarmustafa2024@gmail.com',
-              From : document.getElementById("email").value,
+              To : document.getElementById("email").value,
+              From : 'omarmustafa2024@gmail.com',
               Subject : "New Contact Form - Portfolio",
               Body : "Name: " + document.getElementById("name").value
               + "<br> Email: " + document.getElementById("email").value
