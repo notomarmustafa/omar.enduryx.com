@@ -18,16 +18,16 @@
 
    <!-- header design -->
    <header class="header" style="background-color: #081b29;">
-    <a href="#" class="logo"><span>O</span>mar <span>M</span>ustafa<span>.</span><span class="animate" style="--i:1; background-color: #081b29;"></span></a>
+    <a href="https://omar.enduryx.com/" class="logo"><span>O</span>mar <span>M</span>ustafa<span>.</span><span class="animate" style="--i:1; background-color: #081b29;"></span></a>
 
     <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2; background-color: #081b29;"></span></div>
 
     <nav class="navbar">
-      <a href="https://notomarmustafa.github.io/omar.hopppies.com/index" >Home</a>
-      <a href="#about" class="active">About</a>
-      <a href="https://notomarmustafa.github.io/omar.hopppies.com/index#education">Education</a>
-      <a href="https://notomarmustafa.github.io/omar.hopppies.com/index#skills">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="https://omar.enduryx.com/" >Home</a>
+      <a href="https://omar.enduryx.com/#about" class="active">About</a>
+      <a href="https://omar.enduryx.com/#education">Education</a>
+      <a href="https://omar.enduryx.com/#skills">Skills</a>
+      <a href="https://omar.enduryx.com/about#contact">Contact</a>
       <a href="https://beacons.ai/omarmustafa" target="_blank">Socials</a>
 
       <span class="active-nav"></span>
@@ -61,7 +61,7 @@
    <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1; background-color: #081b29";></span></h2>
 
-    <form onsubmit="sendEmail(); reset(); return false;">
+    <form onsubmit="">
       <div class="input-box">
         <div class="input-field">
           <input type="text" id="name" placeholder="Full Name" required>
@@ -122,32 +122,6 @@
   <script src="assists/js/script.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        function sendEmail(){
-          Email.send({
-              SecureToken: "478d2bb7-ea40-4371-929d-11550781d890",
-              To : 'omarmustafa2024@gmail.com',
-              From : document.getElementById("email").value,
-              Subject : "New Contact Form - Portfolio",
-              Body : "Name: " + document.getElementById("name").value
-              + "<br> Email: " + document.getElementById("email").value
-              + "<br> Mobile Number: " + document.getElementById("phone").value
-              + "<br> Subject: " + document.getElementById("subject").value
-              + "<br> Message: " + document.getElementById("message").value
-          }).then(
-          message => {
-              if (message == "OK") {
-                Swal.fire({
-                    title: "Success!",
-                    text: "Message sent successfully!",
-                    icon: "success"
-                  });
-              }
-          }
-      );
-
-    }
-    </script>
 </body>
 
 </html>
