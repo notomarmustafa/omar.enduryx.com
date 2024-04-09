@@ -1,105 +1,111 @@
 /* MAIN TEXT BEGINNING */
 @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 :root {
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
 }
-::-webkit-scrollbar { width: 13px; }
+::-webkit-scrollbar {
+  width: 13px;
+}
 
-::-webkit-scrollbar-track { background-color:#081b29; }
+::-webkit-scrollbar-track {
+  background-color: #081b29;
+}
 
-::-webkit-scrollbar-thumb { background-color: var(--second-bg-color); }
-body{
-    background-color: var(--bg-color);
-    height: 100vh;
-    background-image: url(/assists/img/bg.jpg);
-    animation: animate 20s ease-in-out infinite;
+::-webkit-scrollbar-thumb {
+  background-color: var(--second-bg-color);
 }
-.error-page{
-    position: absolute;
-    top: 10%;
-    left: 17%;
-    right: 17%;
-    bottom: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  background-image: url(/assists/img/bg.jpg);
+  animation: animate 20s ease-in-out infinite;
 }
-.error-page .content{
-    max-width: 600px;
-    text-align: center;
+.error-page {
+  position: absolute;
+  top: 10%;
+  left: 17%;
+  right: 17%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.content h1{
-    font-size: 18vw;
-    line-height: 1em;
-    position: relative;
+.error-page .content {
+  max-width: 600px;
+  text-align: center;
 }
-.content h1:after{
-    position: absolute;
-    content: attr(data-text);
-    top: 0;
-    left: 0;
-    right: 0;
-    text-shadow: var(--second-bg-color);
-    animation: animate 10s ease-in-out infinite;
+.content h1 {
+  font-size: 18vw;
+  line-height: 1em;
+  position: relative;
+}
+.content h1:after {
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  right: 0;
+  text-shadow: var(--second-bg-color);
+  animation: animate 10s ease-in-out infinite;
 }
 @keyframes animate {
-    0%{
-        background-position: 0 0;
-    }
-    25%{
-        background-position: 100% 0;
-    }
-    50%{
-        background-position: 100% 100%;
-    }
-    75%{
-        background-position: 0 100%;
-    }
-    100%{
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
-.content h4{
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: var(--text-color);
-    max-width: 600px;
-    font-size: 2em;
+.content h4 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  max-width: 600px;
+  font-size: 2em;
 }
-.content p{
-    font-size: 1.2em;
-    color: var(--text-color);
+.content p {
+  font-size: 1.2em;
+  color: var(--text-color);
 }
-.content .btns{
-    margin: 25px 0;
-    display: inline-flex;
+.content .btns {
+  margin: 25px 0;
+  display: inline-flex;
 }
-.content .btns a{
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
-    border: 2px solid var(--main-color);
-    color: var(--main-color);
-    font-weight: 500;
-    padding: 10px 25px;
-    border-radius: 25px;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+.content .btns a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: 500;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
-.content .btns a:hover{
-    color: #000;
-    background: var(--main-color);
+.content .btns a:hover {
+  color: #000;
+  background: var(--main-color);
 }
 
 /* MAIM TEXT ENDING */
