@@ -770,7 +770,7 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .header {
     padding: 2rem 4%;
   }
@@ -785,6 +785,15 @@ section:nth-child(odd) .animate.scroll,
 
   .footer {
     padding: 2rem 4%;
+  }
+  .home-sci {
+    width: 160px;
+    content-visibility: hidden;
+  }
+
+  .home-sci a {
+    width: 38px;
+    height: 38px;
   }
 }
 
